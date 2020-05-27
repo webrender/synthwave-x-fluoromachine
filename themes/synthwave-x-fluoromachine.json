@@ -628,6 +628,31 @@
         "foreground": "#36f9f6ff",
         "fontStyle": ""
       }
+    },
+    {
+      "name": "Variable Object and Other Object Property",
+      "scope": [
+        "variable.object.property",
+        "variable.other.object.property"
+      ],
+      "settings": {
+        "foreground": "#b6f0fc"
+      }
+    },
+    {
+      "name": "Variable Other Object Property",
+      "scope": ["variable.other.object.property"],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Variable Other Object",
+      "scope": ["variable.other.object"],
+      "settings": {
+        "foreground": "#9963ff",
+        "fontStyle": "italic"
+      }
     }
   ]
 }
