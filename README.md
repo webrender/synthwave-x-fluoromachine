@@ -34,6 +34,8 @@ Linux may resemble:
     "file:////home/{your username}/.vscode/extensions/webrender.synthwave-x-fluoromachine-0.0.12/synthwave-x-fluoromachine.css"
     ]
 }
+
+Note for Linux: If using Code - OSS rather than VSCode Studio, the folder will most likely be /.vscode-oss/ rather than /.vscode/
 ```
 • From the command panel, select `Reload Custom CSS and JS`. You'll need to run this command every time vscode updates.
 
