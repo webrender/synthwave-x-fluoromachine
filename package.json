@@ -1,34 +1,20 @@
 {
-    "name": "synthwave-x-fluoromachine",
-    "displayName": "Synthwave x Fluoromachine",
-    "description": "Synthwave '84 x Fluoromachine Theme",
-    "version": "0.0.12",
-    "author": "Jeremy Laskar",
-    "publisher": "webrender",
-	"icon": "icon.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/webrender/synthwave-vscode-x-fluoromachine"
-    },
+    "name": "lotterleben-synthwave-x-fluoromachine",
+    "displayName": "lotterleben-synthwave-x-fluoromachine",
+    "description": "Higher-contrast fork of the Synthwave '84 x Fluoromachine Theme",
+    "version": "0.0.1",
     "engines": {
-        "vscode": "^1.33.0"
+        "vscode": "^1.54.0"
     },
-    "keywords": [
-        "retro",
-        "80s",
-        "vaporwave",
-        "synthwave",
-        "fluoromachine"
-    ],
     "categories": [
         "Themes"
     ],
     "contributes": {
         "themes": [
             {
-                "label": "Synthwave x Fluoromachine",
+                "label": "Lotterleben | Synthwave x Fluoromachine",
                 "uiTheme": "vs-dark",
-                "path": "./themes/synthwave-x-fluoromachine.json"
+                "path": "./themes/Lotterleben  Synthwave x Fluoromachine-color-theme.json"
             }
         ]
     }
