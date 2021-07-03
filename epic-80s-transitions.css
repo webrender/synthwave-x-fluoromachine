@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100&display=swap');
+
+
+/* hover flip specials */
+
+
+.mtk8, .mtk9, .mtk3, .mtk6, .mtk7, .mtk10 {
+    display: inline-block;
+    
+    transition: .4s transform;
+    /* transform: rotateX(0); */
+}
+
+
+.mtk8:hover, .mtk9:hover, .mtk3:hover, .mtk6:hover, .mtk7:hover, .mtk10:hover {
+    text-shadow: 2 2 15px;
+    transform: scale(1.2);
+}
+
+
+/* end of hover flip specials */
+
+
+/* tooltips */
+
+.monaco-editor .monaco-hover {
+    background-color: #262335;
+    display: block!important;
+    padding: 20px;
+    transition: opacity 1s !important;
+    opacity: 1;
+    animation: tooltippulse 4s infinite linear;
+}
+
+.monaco-editor .monaco-hover.hidden {
+    opacity: 0;
+}
+
+@keyframes tooltippulse {
+    0% {  
+        box-shadow: 0 0 0 0 rgba(255, 0, 242, 0);   
+    }
+    50% {
+        box-shadow: 0 0 85px 0 rgba(0, 217, 255, 0.5);  
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 242, 0);
+    }    
+}
+
+.monaco-editor .monaco-hover::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-size: 200% 200%;
+    width: 100%;
+    background-image: linear-gradient(to right, #fc28a8, #03edf9, #fc28a8, #03edf9, #fc28a8);
+
+    animation: neonline 2s infinite;
+}
+
+@keyframes neonline {
+    0% {  
+       background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }    
+}
+
+
+
+/* end of tooltips */
+
+
+/* tabs */
+
+/* .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::before {
+    
+    animation: neonline2 2s infinite;
+    background-size: 200% 200%!important;
+    width: 100%;
+    background-image: linear-gradient(to right, #fc28a8, #03edf9, #fc28a8, #03edf9, #fc28a8)!important;
+}
+
+@keyframes neonline2 {
+    0% {  
+       background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }    
+} */
+
+/* end of tabs*/
+
+
+.monaco-editor .selected-text {
+    background-color: #000000aa!important;
+    box-shadow: 0 0 35px 5px #ff008d55;
+    color: #fff!important;
+ }
+
+
+.monaco-editor .cursor { 
+    box-shadow: 0 0 15px 2px #00c3ff;
+    animation: cursor .5s infinite linear;
+}
+
+
+.editor-group-container:after {
+    animation: flight 2s infinite linear;
+}
+
+.view-line .inline-folded:after {
+    color:yellow;
+    border-radius: 5px;
+    animation: colapse .5s linear;
+}
+
+
+
+.monaco-editor .line-numbers.active-line-number {
+    color: turquoise;
+    text-shadow: 0 0 1px yellow!important;
+}
+
+
+
+
+/* canvas.minimap-decorations-layer {
+    background-color: transparent !important;
+    background-image: linear-gradient(to bottom, #200933 75%, #3d0b43);
+    background-size: auto 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+} */
+
+.monaco-editor .minimap-shadow-visible {
+    box-shadow: none!important;
+}
+
+
+
+
+
+@keyframes colapse {
+    0% {  
+        background-color:yellow;
+        box-shadow: 0 0 5px 0 yellow;      
+    }
+    70% {
+        background-color: yellow;
+        box-shadow: 0 0 35px 10px yellow;
+    }
+    100% {
+        background-color: transparent;
+    }    
+}
+
+@keyframes cursor {
+    0% {  
+        box-shadow: 0 0 5px 0 #00c3ff;      
+    }
+    100% {
+        box-shadow: 0 0 35px 5px #00c3ff;
+    }
+}
+
+@keyframes flight {
+    0% {  
+        background-size:20px 20px;
+       
+    }
+    100% {
+        background-size:20px 10px;
+    }
+}
+
+
+
+.editor-container::after {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    /* content: 'do epic shit...'; */
+    content: ' ';
+    font-weight: bold;
+    font-size: 5em;
+    font-family: 'Tourney', cursive;
+
+    color: #fc28a822;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    overflow-x: hidden;
+    height: 120px;
+    
+
+    text-shadow: 0 0 30px #fc28a8;
+
+    animation: cnt 10s infinite linear;
+
+
+
+}
+
+@keyframes cnt {
+    0% {  
+        bottom: 150px;
+        font-size: 0.1em;
+        color: #fc28a822;       
+        text-shadow: 0 0 5px #fc28a811;
+    }
+    100% {
+        bottom: -400px;
+        font-size: 20em;       
+        color: #fc28a855;
+        text-shadow: 0 0 30px #fc28a8;
+    }
+}
