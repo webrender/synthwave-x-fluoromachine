@@ -2,7 +2,7 @@
 
 This is a fork of @robbowen's [Synthwave '84 theme](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode), merged with @fullerenedream's [Fluoromachine](https://colorsublime.github.io/themes/FluoroMachine/) theme for VSCode.
 
-![Theme screenshot](./screenshot.png)
+![Theme screenshot](https://raw.githubusercontent.com/webrender/synthwave-x-fluoromachine/master/screenshot.png)
 
 ## Installation
 
